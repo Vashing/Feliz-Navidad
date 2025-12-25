@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Una tarjeta especial 🎄❤️</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="snow"></div>
+
+<!-- PANTALLA DE ACCESO -->
+<div class="container" id="formulario">
+    <h1>Solo quien conoce nuestra historia puede entrar 💫</h1>
+    <p>Ingresa la fecha correcta para abrir esta tarjeta</p>
+
+    <input type="date" id="fecha">
+    <button onclick="verificarFecha()">Abrir tarjeta 🎁</button>
+</div>
+
+<!-- TARJETA -->
+<div class="card hidden" id="tarjeta">
+    <h2>Feliz Navidad Gaby❤️🎄</h2>
+
+    <p class="mensaje">
+        No sé cómo empezar a expresar todo lo que siento por ti en esta época tan especial.
+        Cada momento a tu lado es un regalo que atesoro profundamente.
+        Tampoco sé qué traerá el próximo año, 
+        pero sí sé con quien quiero recibirlo... 
+        Y es contigo
+    </p>
+
+    <p class="mensaje">
+        Que esta navidad sea solo el inicio
+        de muchas más a tu lado,
+        llenas de amor, paz, tranquilidad, felicidad y sonrisas compartidas.
+    </p>
+
+    <p class="mensaje">
+        Hoy no solo celebro la navidad, junto a mi familia y seres queridos,
+        celebro haberte conocido y tenerte a ti en mi vida.
+        Eres el mejor regalo que podría haber pedido.
+    </p>
+
+    <div class="firma">
+        <p>Con mucho cariño y amor,</p>
+        <span>Tu persona favorita ✨</span><br>
+        <br>
+        <button class="btn-musica" onclick="toggleMusica()">🎵 Pausar música</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+<!-- MUSICA DE FONDO -->
+<!-- MUSICA DE FONDO -->
+<iframe
+    id="musica"
+    width="0"
+    height="0"
+    src=""
+    frameborder="0"
+    allow="autoplay">
+</iframe>
+<audio id="musicaFondo" loop>
+    <source src="audio/flaws.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+</audio>
+
+
+</body>
+</html>

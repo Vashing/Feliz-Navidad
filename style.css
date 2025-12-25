@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #8b0000, #0f3d2e);
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+    max-width: 400px;
+}
+
+.container h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.container p {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+button {
+    background: #c62828;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #e53935;
+    transform: scale(1.05);
+}
+
+/* TARJETA */
+.card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 50px;
+    border-radius: 25px;
+    text-align: center;
+    max-width: 500px;
+    animation: fadeIn 1.5s ease;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.4);
+}
+
+.card h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.mensaje {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.firma {
+    margin-top: 25px;
+}
+
+.firma span {
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+}
+
+/* OCULTO */
+.hidden {
+    display: none;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* NIEVE */
+.snow::before,
+.snow::after {
+    content: "❄ ❅ ❆";
+    position: absolute;
+    width: 100%;
+    top: -10%;
+    animation: snow 12s linear infinite;
+    opacity: 0.4;
+}
+
+.snow::after {
+    animation-duration: 18s;
+}
+
+@keyframes snow {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(120vh); }
+}
+
+.btn-musica {
+    margin-top: 20px;
+    background: #ffd700;
+    color: #8b0000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
